@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:dev": "ng serve --proxy-config proxy.conf.json --ssl true",
     "pre-dev": "ng serve --host 0.0.0.0 --base-href . --disable-host-check",
     "build": "ng build",
     "test": "ng test",
@@ -14,7 +15,6 @@
   },
   "private": true,
   "dependencies": {
-    "@angular-devkit/build-angular": "^0.13.0",
     "@angular/animations": "7.2.0",
     "@angular/cdk": "^7.2.1",
     "@angular/common": "7.2.0",
@@ -42,7 +42,8 @@
     "ng2-pdf-viewer": "^5.3.3",
     "ngx-mat-select-search": "^1.8.0",
     "ngx-print": "^1.1.4",
-    "ngx7-material-keyboard": "^0.1.2",
+    "@ngx-material-keyboard/core": "^0.1.1",
+    "rxjs-compat": "^6.6.7",
     "ol": "^5.3.0",
     "osm": "^1.0.0",
     "rxjs": "^6.0.0",
@@ -58,6 +59,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^4.2.1",
+    "@angular-devkit/build-angular": "^0.13.10",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~1.7.1",
